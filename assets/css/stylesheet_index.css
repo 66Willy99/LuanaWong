@@ -4,7 +4,7 @@
     margin: 0 auto;
     max-width: 1000px;
     grid-template-areas: 
-    ". title-project-box ."
+    "title-project-box title-project-box title-project-box"
     "desc-project-box desc-project-box desc-project-box"
     "bento-1 bento-2 bento-3"
     "bento-1 bento-2 bento-3"
@@ -31,12 +31,19 @@
     grid-area: title-project-box;
     display: flex;
     justify-content: center;
+    color: black;
+    font-size: 50px;
+    font-family: sans-serif;
 }
 .desc-project-box{
     grid-area: desc-project-box;
     display: flex;
     justify-content: center;
     text-align: center;
+    width: 690px;
+    margin: 0 auto;
+    color: #5C5C5C;
+    font-family: sans-serif;
 }
 .box-1 {
     grid-area: bento-1; 
@@ -117,4 +124,23 @@
     grid-area: btn-projects;
     display: flex;
     justify-content: center;
+}
+.pro-contact{
+    padding: 50px;
+    background-color: #F5BB3D;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    ". pro-contact-desc pro-contact-desc ."
+    ". pro-contact-btn pro-contact-btn .";
+}
+.pro-contact-desc{
+    grid-area: pro-contact-desc;
+    font-size: 55px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.pro-contact-btn{
+    grid-area: pro-contact-btn;
+    text-align: center;
 }
