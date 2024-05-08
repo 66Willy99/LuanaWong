@@ -1,30 +1,108 @@
-.bento-grid{
+.bento-box{
+    grid-area: bento;
     display: grid;
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 1000px;
+    grid-template-areas: 
+    ". title-project-box ."
+    ". desc-project-box ."
+    "bento-1 bento-2 bento-3"
+    "bento-1 bento-2 bento-3"
+    "bento-4 bento-2 bento-3"
+    "bento-4 bento-5 bento-3"
+    "bento-4 bento-5 bento-6"
+    "bento-4 bento-5 bento-6";
+    gap: 30px;
+}
+.title-project-box{
+    grid-area: title-project-box;
+    display: flex;
+    justify-content: center;
+}
+.desc-project-box{
+    grid-area: desc-project-box;
+    display: flex;
+    justify-content: center;
+}
+.box-1 {
+    grid-area: bento-1; 
+  }
+  
+.box-2 {
+    grid-area: bento-2;
+}
+  
+.box-3 {
+    grid-area: bento-3;
+}
+  
+.box-4 {
+    grid-area: bento-4;
+}
+  
+.box-5 {
+    grid-area: bento-5; 
+}
+  
+.box-6 {
+    grid-area: bento-6;
+}
+.index-desc{
+    grid-area: index-desc;
+ }
+.index-img{
+    grid-area: index-img;
+    position: relative;
+}
+.btn-adapt{
+    font-style: italic;
+    font-size: xx-large;
+    background-color: black;
+    position: absolute;
+    right: -56px;
+    bottom: -2.5rem;
+    color: #F5BB3C;
+    border-radius: 50rem;
+    padding: 15px 25px;
+
+}
+
+.profile-img-detail{
+    position: absolute;
+    left: -52px;
+    top: -45px;
+}
+.profile-img{
+}
+.pro-desc{
+    display: grid;
+    max-width: 1000px;
+    margin: 100px auto;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px,auto);
-    gap: 10px;
+    grid-template-areas:
+    "index-desc index-desc index-img";
 }
-.bento-grid div{
-    border: 3px solid blue;
-    border-radius: 10px;
+.pro-works-title{
+    grid-area: pro-works-title;
+    display: flex;
+    justify-content: center;
 }
-.grid-1{
-    grid-row: 1 / 2;
+.pro-works-container{
+    grid-area: pro-works-container;
 }
-.grid-2{
-    grid-row: 1 / 3;
+.pro-works{
+    display: grid;
+    max-width: 1000px;
+    margin: 100px auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    ". pro-works-title ."
+    ". pro-works-container ."
+    ". bento ."
+    ". btn-projects .";
 }
-.grid-3{
-    grid-row: 1 / 4;
-}
-.grid-4{
-    grid-row: 2 / 5;
-}
-.grid-5{
-    grid-row: 3 / 5;
-}
-.grid-6{
-    grid-row: 4 / 5;
+.btn-projects{
+    grid-area: btn-projects;
+    display: flex;
+    justify-content: center;
 }
