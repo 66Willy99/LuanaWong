@@ -5,7 +5,7 @@
     max-width: 1000px;
     grid-template-areas: 
     ". title-project-box ."
-    ". desc-project-box ."
+    "desc-project-box desc-project-box desc-project-box"
     "bento-1 bento-2 bento-3"
     "bento-1 bento-2 bento-3"
     "bento-4 bento-2 bento-3"
@@ -13,6 +13,19 @@
     "bento-4 bento-5 bento-6"
     "bento-4 bento-5 bento-6";
     gap: 30px;
+}
+.desc-txt{
+    display: flex;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.6rem;
+    color: #5C5C5C;
+}
+.subtitle-2{
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin: 0 auto 40px;
 }
 .title-project-box{
     grid-area: title-project-box;
@@ -23,6 +36,7 @@
     grid-area: desc-project-box;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 .box-1 {
     grid-area: bento-1; 
@@ -71,8 +85,6 @@
     position: absolute;
     left: -52px;
     top: -45px;
-}
-.profile-img{
 }
 .pro-desc{
     display: grid;
