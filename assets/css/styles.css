@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .subtitle{
     color: #F5BB3D;
     font-family: sans-serif;
