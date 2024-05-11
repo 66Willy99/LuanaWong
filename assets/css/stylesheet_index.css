@@ -149,3 +149,11 @@
 .btn-contact{
     padding: 15px 50px;
 }
+.span-color-1{
+    color: #F5BB3D; 
+    font-style: italic;
+}
+.span-color-2{
+    color: white; 
+    font-style: italic;
+}
