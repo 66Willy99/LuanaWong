@@ -1,27 +1,21 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    position: relative;
+    min-width: 0;
 }
-.subtitle{
-    color: #F5BB3D;
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: 100;
+body{
+    min-height: 100vh;
 }
-.btn-light{
-    font-size: 15px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    background-color: rgba(255, 255, 255, 0);
-    color: black;
-    border: 1px solid black;
-    border-radius: 50rem;
-    padding: 13px 25px;
+h1,h2,h3,h4{
+    text-wrap: balance;
 }
-.btn-light:hover{
-    transition: ease 150ms;
-    color: white;
-    background-color: black;
-    border: 1px solid white;
+p{
+    text-wrap: pretty;
+}
+section, div{
+    border: 1px solid #000;
+    min-height: 50px;
+}
+div>div{
+    border: 1px solid #f00;
 }
